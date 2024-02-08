@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concreate\" />
+    <None Remove="Abstract\" />
+    <None Remove="Protos\KPSPublic.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concreate\" />
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools" Version="2.23.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Google.Protobuf" Version="3.9.1" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.23.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\KPSPublic.asmx" GrpcServices="Client">
+      <SourceUri>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</SourceUri>
+    </Protobuf>
+  </ItemGroup>
+</Project>
