@@ -24,3 +24,13 @@ Odevler/MaskeTakip/MaskeTakip.sln
 .DS_Store
 .DS_Store
 Dersler/Intro/Intro/Intro.csproj
+*.cache
+Dersler/Intro/Intro/obj/Debug/net7.0/Intro.GlobalUsings.g.cs
+*.props
+Dersler/Intro/Intro/obj/Intro.csproj.nuget.g.targets
+*.editorconfig
+Dersler/Intro/Intro/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+*.targets
+Odevler/CSharpCourse/TypesAndVariables/TypesAndVariables.csproj
+Dersler/Intro/Intro/obj/Debug/net7.0/Intro.AssemblyInfo.cs
+Odevler/CSharpCourse/CSharpCourse.sln
