@@ -10,6 +10,7 @@ namespace KodlamaioDemo.DataAccess.Abstract
         void Delete(Category category);
         void Update(Category category);
         List<Category> GetList();
+        void Delete(int id);
     }
 }
 

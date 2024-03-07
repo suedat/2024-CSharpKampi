@@ -5,9 +5,9 @@ using KodlamaioDemo.Entities.Concrete;
 
 namespace KodlamaioDemo.DataAccess.Abstract
 {
-	public interface ICourseDal : IGenericDal<Course>
-	{
-
+    public interface ICourseDal : IGenericDal<Course>
+    {
+        void Delete(int id);
     }
 }
 
